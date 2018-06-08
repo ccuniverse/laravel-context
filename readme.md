@@ -5,7 +5,7 @@
 ### Install
 
 ```bash
-composer require ailuoy/context
+composer require ailuoy/laravel-context
 
 Ailuoy\Context\ContextServiceProvider::class,
 
