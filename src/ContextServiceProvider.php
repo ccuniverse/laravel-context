@@ -1,6 +1,6 @@
 <?php
 
-namespace Ailuoy\Context;
+namespace Talk\Context;
 
 use Illuminate\Support\ServiceProvider;
 
