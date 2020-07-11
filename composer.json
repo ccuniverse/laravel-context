@@ -18,5 +18,15 @@
   },
   "require-dev": {
     "phpunit/phpunit": "^8.5"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Talk\\Context\\ServiceProvider"
+      ],
+      "aliases": {
+        "Context": "Talk\\Context\\Facade"
+      }
+    }
   }
 }

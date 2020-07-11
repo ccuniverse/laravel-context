@@ -5,7 +5,7 @@ namespace Talk\Context;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Traits\Macroable;
 
-class Context
+class Manager
 {
     use Macroable;
 
@@ -15,7 +15,14 @@ class Context
 
     protected function __construct()
     {
-        //
+    }
+
+    /**
+     * 释放数据
+     */
+    public static function release()
+    {
+        static::$data = [];
     }
 
     public static function create()
@@ -47,6 +54,11 @@ class Context
     public static function get($key, $default = null)
     {
         return Arr::get(self::$data, $key, $default);
+    }
+
+    public static function forget($key)
+    {
+        return Arr::forget(self::$data, $key);
     }
 
     public static function all()

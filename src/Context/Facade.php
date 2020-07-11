@@ -2,9 +2,9 @@
 
 namespace Talk\Context;
 
-use Illuminate\Support\Facades\Facade;
+use Illuminate\Support\Facades\Facade as IlluminateFacade;
 
-class ContextFacade extends Facade
+class Facade extends IlluminateFacade
 {
     /**
      * Get the binding in the IoC container.
