@@ -1,6 +1,6 @@
 <?php
 
-namespace Ailuoy\Context;
+namespace Talk\Context;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Traits\Macroable;
@@ -20,7 +20,7 @@ class Context
 
     public static function create()
     {
-        if (! isset(static::$instance)) {
+        if (!isset(static::$instance)) {
             static::$instance = new self;
         }
 

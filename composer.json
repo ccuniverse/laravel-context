@@ -1,17 +1,22 @@
 {
-    "name": "ailuoy/laravel-context",
-    "description": "Add a application deploy timestamp prefix to cookie name for laravel.",
-    "keywork": ["laravel", "cookie", "timestamp"],
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Ailuoy\\Context\\": "src/"
-        }
-    },
-    "require": {
-        "illuminate/support": "~5.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~4.0"
+  "name": "talk/laravel-context",
+  "type": "library",
+  "description": "Managing data in the lifecycle of a request for laravel.",
+  "keywords": [
+    "laravel",
+    "context",
+    "request"
+  ],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Talk\\Context\\": "src/"
     }
+  },
+  "require": {
+    "illuminate/support": "^7.0|^8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5"
+  }
 }

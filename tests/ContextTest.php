@@ -1,15 +1,21 @@
 <?php
 
-use Ailuoy\Context\Context;
-use Tests\TestCase;
+use PHPUnit\Framework\TestCase;
+use Talk\Context\Context;
+
 class ContextTest extends TestCase
 {
-    public function setUp()
+    /**
+     * @var Context
+     */
+    private $context;
+
+    protected function setUp(): void
     {
         $this->context = Context::create();
     }
 
-    public function test_all_passed()
+    public function testAllPassed()
     {
         Context::macro('get_foo', function () {
             return 'foo';
@@ -23,7 +29,7 @@ class ContextTest extends TestCase
 
         $this->assertEquals($this->context::all(), [
             'name' => 'context',
-            'age' => 20,
+            'age'  => 20,
         ]);
 
         $this->assertEquals('foo', $this->context::get_foo());
