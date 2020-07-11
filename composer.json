@@ -10,7 +10,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Talk\\Context\\": "src/"
+      "Talk\\": "src/"
     }
   },
   "require": {
